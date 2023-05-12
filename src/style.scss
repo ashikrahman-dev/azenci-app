@@ -1,0 +1,412 @@
+/**
+ * @Main scss for (Template/Project Name)
+ * @project     - Azenci App
+ * @author      - Ashik Rahman.
+ * @created_by  - Ashik Rahman.
+ * @created_at  - 
+ * @modified_by -
+ */
+
+/* fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* fonts import -END */
+
+/* reset, root */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7A7792;
+    font-weight: 400;
+}
+
+:root {
+    --main: #8C7DFF;
+    --main_light: #F0EEFF;
+    --secondary: #FF8989;
+    --dark_1: #191638;
+    --dark_2: #3B3663;
+    --dark_3: #7A7792;
+    --dark_4: #AAA8BD;
+    --dark_5: #EAE8F3;
+    --dark_6: #F7F5FF;
+
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+/* reset, root - END */
+
+
+/* helper , base classes - Start */
+
+.text-main {
+    color: var(--main);
+}
+.text-main-light {
+    color: var(--main_light);
+}
+.text-secondary {
+    color: var(--secondary);
+}
+.text-dark-1 {
+    color: var(--dark_1);
+}
+.text-dark-2 {
+    color: var(--dark_2);
+}
+.text-dark-3 {
+    color: var(--dark_3);
+}
+.text-dark-4 {
+    color: var(--dark_4);
+}
+.text-dark-5 {
+    color: var(--dark_5);
+}
+.text-dark-6 {
+    color: var(--dark_6);
+}
+
+.bg-main {
+    background-color: var(--main);
+}
+.bg-main-light {
+    background-color: var(--main_light);
+}
+.bg-dark-1 {
+    background-color: var(--dark_1);
+}
+.bg-secondary {
+    background-color: var(--secondary);
+}
+.bg-dark-2 {
+    background-color: var(--dark_2);
+}
+.bg-dark-3 {
+    background-color: var(--dark_3);
+}
+.bg-dark-4 {
+    background-color: var(--dark_4);
+}
+.bg-dark-5 {
+    background-color: var(--dark_5);
+}
+.bg-dark-6 {
+    background-color: var(--dark_6);
+}
+
+
+//Font size
+.fs-13 {
+    font-size: 13px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-24 {
+    font-size: 24px;
+}
+.fs-38 {
+    font-size: 38px;
+}
+.fs-56 {
+    font-size: 56px;
+}
+
+
+//Line height
+.lh-15 {
+    line-height: 15px;
+}
+.lh-16 {
+    line-height: 16px;
+}
+.lh-18 {
+    line-height: 18px;
+}
+.lh-24 {
+    line-height: 24px;
+}
+.lh-26 {
+    line-height: 26px;
+}
+.lh-28 {
+    line-height: 28px;
+}
+.lh-30 {
+    line-height: 30px;
+}
+.lh-54 {
+    line-height: 54px;
+}
+.lh-72 {
+    line-height: 72px;
+}
+
+
+//letter spacing
+.ls-09 {
+    letter-spacing: 0.09em;
+}
+
+//Border radius
+.radius-8 {
+    border-radius: 8px;
+}
+.radius-12 {
+    border-radius: 12px;
+}
+.radius-16 {
+    border-radius: 16px;
+}
+
+//Padding
+.pt-20 {
+    padding-top: 20px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.pt-50 {
+    padding-top: 50px;
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.pt-120 {
+    padding-top: 120px;
+}
+.pb-120 {
+    padding-bottom: 120px;
+}
+
+/* helper , base classes - End */
+
+
+/* Header navbar - Start */
+
+.header-wrap {
+    background: linear-gradient(104.29deg, rgba(140, 125, 255, 0.15) 0%, rgba(255, 137, 137, 0.15) 100%);
+    padding: 20px 0;
+    .header-menu {
+        display: flex;
+        gap: 50px;
+    
+        .nav-link {
+            padding: 0 !important;
+            color: var(--dark_2);
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            transition: all .1s linear;
+            position: relative;
+
+            &:hover {
+                color: var(--secondary);
+                
+
+                &.active {
+                    color: var(--secondary);
+    
+                }
+                &::before {
+                    width: 100%;
+                }
+            }
+
+            &.active {
+                color: var(--secondary);
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 0%;
+                    height: 1px;
+                    background: linear-gradient(135deg, #FF8989 0%, #FFBB89 100%);
+                    border-radius: 2px;
+                    left: 0;
+                    bottom: -5px;
+                    transition: all .2s linear;
+                }
+                
+                &::before {
+                    width: 100%;
+                }
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                width: 0%;
+                height: 1px;
+                background: linear-gradient(135deg, #FF8989 0%, #FFBB89 100%);
+                border-radius: 2px;
+                left: 0;
+                bottom: -5px;
+                transition: all .2s linear;
+            }
+
+            
+        }
+
+        
+    }
+}
+
+.dropdown-toggle {
+    .sub-menu-active {
+        position: relative;
+        
+        &::after {
+            transform: rotate(-180deg);
+        }
+    }
+
+    &::after {
+        background: url("data:image/svg+xml,%3Csvg width='14' height='7' viewBox='0 0 14 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.28 0.966797L7.93333 5.31346C7.42 5.8268 6.58 5.8268 6.06667 5.31346L1.72 0.966797' stroke='%233B3663' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        width: 16px;
+        height: 16px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: 0;
+        vertical-align: -5px;
+        transition: all .2s linear;
+
+        
+    }
+    &:hover {
+        &::after {
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+//Common button CSS
+
+.contact-fill-btn {
+    background: linear-gradient(94.99deg, #8C7DFF 0%, #7DA9FF 100%);
+    padding: 10px 18px;
+    gap: 5px;
+
+    &:hover {
+        background: linear-gradient(270deg, #8C7DFF 0%, #7DA9FF 100%);
+    }
+}
+
+/* Header navbar - End */
+
+/* Hero banner - Start */
+.hero-banner{
+    height: calc(100vh - 80px);
+    background: linear-gradient(104.29deg, rgba(140, 125, 255, 0.15) 0%, rgba(255, 137, 137, 0.15) 100%);
+}
+
+.subheading {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--main);
+}
+
+.banner-heading {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 72px;
+    color: var(--dark_2);
+}
+
+.dual-btutton-wrap {
+    gap: 20px;
+}
+/* Hero banner - End */
+
+
+/* Common button - Start */
+
+//Fill color button.
+.common-fill-btn {
+    padding: 17px 68px 17px 40px;
+    background: linear-gradient(94.99deg, #8C7DFF 0%, #7DA9FF 100%);
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.8225 4.44727L15.375 8.99977L10.8225 13.5523' stroke='white' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M2.625 9H15.2475' stroke='white' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        width: 18px;
+        height: 18px;
+        right: 40px;
+        background-repeat: no-repeat;
+        transition: all .2s linear
+    };
+
+    &:hover {
+        &::before {
+            right: 33px;
+        }
+    }
+
+}
+
+//border button.
+
+.common-minimal-btn {
+    
+    padding: 15px 66px 15px 38px;
+    background: transparent;
+    border: 2px solid #8C7DFF;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.8225 4.44727L15.375 8.99977L10.8225 13.5523' stroke='%238C7DFF' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M2.625 9H15.2475' stroke='%238C7DFF' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        width: 18px;
+        height: 18px;
+        right: 40px;
+        background-repeat: no-repeat;
+        transition: all .2s linear
+    };
+
+    &:hover {
+        color: var(--main);
+        &::before {
+            right: 33px;
+        }
+    }
+}
+
+/* Common fill button - End */
