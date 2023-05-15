@@ -1,0 +1,19 @@
+.services-item-wrap {
+    .services-item {
+        box-shadow: 0px 10px 60px rgba(24, 20, 54, 0.08);
+        padding: 50px 40px;
+    }
+
+    padding: 2px;
+    background: transparent;
+    border-radius: 10px;
+    &:hover {
+        background: linear-gradient(180deg, #8C7DFF 0%, #FF8989 100%);
+        border-radius: 10px;
+        .services-item {
+            &:hover {
+                border-radius: 10px !important;
+            }
+        }
+    }
+}

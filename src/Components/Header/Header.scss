@@ -1,0 +1,110 @@
+/* Header navbar - Start */
+
+.header-wrap {
+    background: linear-gradient(104.29deg, rgba(140, 125, 255, 0.15) 0%, rgba(255, 137, 137, 0.15) 100%);
+    padding: 20px 0;
+    .header-menu {
+        display: flex;
+        gap: 50px;
+    
+        .nav-link {
+            padding: 0 !important;
+            color: var(--dark_2);
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            transition: all .1s linear;
+            position: relative;
+
+            &:hover {
+                color: var(--secondary);
+                
+
+                &.active {
+                    color: var(--secondary);
+    
+                }
+                &::before {
+                    width: 100%;
+                }
+            }
+
+            &.active {
+                color: var(--secondary);
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 0%;
+                    height: 1px;
+                    background: linear-gradient(135deg, #FF8989 0%, #FFBB89 100%);
+                    border-radius: 2px;
+                    left: 0;
+                    bottom: -5px;
+                    transition: all .2s linear;
+                }
+                
+                &::before {
+                    width: 100%;
+                }
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                width: 0%;
+                height: 1px;
+                background: linear-gradient(135deg, #FF8989 0%, #FFBB89 100%);
+                border-radius: 2px;
+                left: 0;
+                bottom: -5px;
+                transition: all .2s linear;
+            }
+
+            
+        }
+
+        
+    }
+}
+
+.dropdown-toggle {
+    .sub-menu-active {
+        position: relative;
+        
+        &::after {
+            transform: rotate(-180deg);
+        }
+    }
+
+    &::after {
+        background: url("data:image/svg+xml,%3Csvg width='14' height='7' viewBox='0 0 14 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.28 0.966797L7.93333 5.31346C7.42 5.8268 6.58 5.8268 6.06667 5.31346L1.72 0.966797' stroke='%233B3663' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        width: 16px;
+        height: 16px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: 0 !important;
+        vertical-align: -5px !important;
+        transition: all .2s linear;
+
+        
+    }
+    &:hover {
+        &::after {
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+//Common button CSS
+
+.contact-fill-btn {
+    background: linear-gradient(94.99deg, #8C7DFF 0%, #7DA9FF 100%);
+    padding: 10px 18px;
+    gap: 5px;
+
+    &:hover {
+        background: linear-gradient(270deg, #8C7DFF 0%, #7DA9FF 100%);
+    }
+}
+
+/* Header navbar - End */

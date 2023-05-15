@@ -1,0 +1,73 @@
+
+/* Hero banner - Start */
+.hero-banner{
+    height: calc(100%);
+    background: linear-gradient(104.29deg, rgba(140, 125, 255, 0.15) 0%, rgba(255, 137, 137, 0.15) 100%);
+}
+
+.subheading {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--main);
+}
+
+.banner-heading {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 72px;
+    color: var(--dark_2);
+}
+
+.dual-btutton-wrap {
+    gap: 20px;
+}
+
+//Partners logo.
+.our-partners-title {
+    &::before {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 42%;
+        background: linear-gradient(270deg, rgba(170, 168, 189, 0.5) 0%, rgba(170, 168, 189, .03) 100%);
+        left: 0;
+        top: 13px;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 42%;
+        background: linear-gradient(90deg, rgba(170, 168, 189, 0.5) 0%, rgba(170, 168, 189, .03) 100%);
+        right: 0;
+        top: 13px;
+    }
+}
+
+/* Hero banner - End */
+
+
+
+.partner-logo-item {
+    width: 120px;
+    flex-shrink: 0;
+}
+.our-partners-wrap {
+    animation: animated-slide 20s linear infinite;
+    gap: 50px;
+}
+
+@keyframes animated-slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-170px * 8));
+    }
+}
+
+

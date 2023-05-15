@@ -9,6 +9,8 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import  Logo  from "../../assets/img/azenci-logo.svg"
 import { Link, useLocation } from "react-router-dom";
 
+import "./Header.scss"
+
 function Header() {
     
     const mainMenu = [
@@ -53,7 +55,6 @@ function Header() {
     ]
 
     const location = useLocation();
-    console.log(location);
 
     return (
         <Navbar expand="lg" className="header-wrap">
@@ -101,8 +102,8 @@ function Header() {
                         <span>Contact</span>
                         <span>
                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.01875 3.70703L12.8125 7.50078L9.01875 11.2945" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M2.1875 7.5H12.7062" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.01875 3.70703L12.8125 7.50078L9.01875 11.2945" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                                <path d="M2.1875 7.5H12.7062" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
                         </span>
                     </Link>

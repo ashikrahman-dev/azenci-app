@@ -3,14 +3,21 @@ import  HeroImage  from "../../assets/img/hero-img.svg"
 import FillButton from "../../Components/FillButton/FillButton"
 import MinimalButton from "../../Components/MinimalButton/MinimalButton"
 
+import "./Home.scss"
+import { brandLogo } from "../../data"
+import Services from "../../Components/Services/Services"
+import Feature from "../../Components/Feature/Feature"
+
+
+
 
 export const Home = () => {
   return (
     <>
 
       <div className="hero-banner">
-        <Container>
-          <Row className="pt-120 pb-120 align-items-center">
+        <Container className="overflow-hidden">
+          <Row className="pt-120 pb-120 align-items-center my-3">
             <Col xl={6}>
               <div className="subheading pb-20">
                 Digital Agency
@@ -23,18 +30,41 @@ export const Home = () => {
                 Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <div className="dual-btutton-wrap d-flex pt-50">
-                <FillButton />
-                <MinimalButton />
+
+                <FillButton buttonText="Get Started" buttonLink="/about" />
+                <MinimalButton buttonText="See Portfolio" buttonLink="portfolio" />
               </div>
             </Col>
             <Col xl={6}>
-              <div >
+              <div className="text-end">
                 <img src={ HeroImage } alt="" className="img-fluid" />
+              </div>
+            </Col>
+          </Row>
+          <Row className="brand-logo">
+            <h6 className="our-partners-title text-dark-1 fw-bold fs-6 lh-26 text-center position-relative pb-30">
+              Our Trusted Partners
+            </h6>
+            <Col>
+              <div className="our-partners-wrap d-flex align-items-center pb-50 ">
+                {
+                  brandLogo.map((logo, index) => {
+                    return (
+                      <div className="partner-logo-item" key={index}>
+                        <img src={logo.logoUrl} alt="Logo" />
+                      </div>
+                    )
+                  })
+                }
               </div>
             </Col>
           </Row>
         </Container>
       </div>
+
+      <Services />
+
+      <Feature />
 
     </>
     
