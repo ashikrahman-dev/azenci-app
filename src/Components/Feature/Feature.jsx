@@ -3,12 +3,16 @@ import "./Feature.scss"
 
 import LeftShape from "../../assets/img/why-choose-us-left-shape.svg"
 import RightShape from "../../assets/img/why-choose-us-right-shape.svg"
+import tickCircle from "../../assets/img/tick-circle.svg"
 import { features } from "../../data";
 
 
 
 
 const Feature = () => {
+
+    // const featuredItems = features.featureText.split(" | ")
+
     return (
         <>
             <div className="feature-area pt-120 pb-120 position-relative">
@@ -31,6 +35,29 @@ const Feature = () => {
                                 <p className={`fs-18 lh-28 text-dark-3 pb-30`}>
                                     { features.description }
                                 </p>
+
+                                <ul>
+                                    {
+                                        features.featureList.map((featuredItem) => {
+                                            return (
+                                                <li key={ featuredItem.id } className="featured-list-item fs-6 lh-26 fw-normal text-dark-3 d-flex align-items-center"><span><img src={ tickCircle } alt="icon" className="img-fluid" /></span> { featuredItem.featureListText } </li>
+                                            )
+                                        })
+                                        
+                                    }
+
+                                </ul>
+                                
+                                {/* <ul>
+                                    {
+                                        featuredItems.map((item ,index) => {
+                                            return (
+                                                <li key={index}> { item }</li>
+                                            )
+                                        })
+                                    }
+                                    
+                                </ul> */}
 
                             </div>
                         </Col>

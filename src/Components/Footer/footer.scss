@@ -23,8 +23,26 @@
     }
 
     .fullscreen-border {
-        height: 20px;
+        height:1px;
         width: 100%;
-        background: #ddd;
+        background: linear-gradient(90deg, rgba(234,232,243,0) 0%, rgba(234,232,243,0.4) 50%, rgba(234,232,243,0) 100%);
+    }
+}
+
+.social-links-wrap {
+    gap: 15px;
+    
+    .sicial-item {
+        width: 35px;
+        height: 35px;
+        border: 1px solid var(--dark_4);
+        border-radius: 100px;
+        &:hover {
+            border: 0;
+            background: linear-gradient(94.99deg, #8C7DFF 0%, #7DA9FF 100%);
+            svg * {
+                fill: white;
+            }
+        }
     }
 }

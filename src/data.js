@@ -119,10 +119,25 @@ export const services = [
 
 export const features = {
     id: 1,
+    featureImg: FeaturesImage,
     subTitle: "Why Choose Us",
     title: "We deliver the high quality end results you need",
     description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    featureImg: FeaturesImage
+    featureList: [
+        {
+            id: 1,
+            featureListText: "Perfect for modern startups",
+        },
+        {
+            id: 2,
+            featureListText: "Built with ease-of-use at its core",
+        },
+        {
+            id: 3,
+            featureListText: "Quality design & thoughtfully crafted code",
+        },
+    ],
+    featureText: "Perfect for modern startups | Built with ease-of-use at its core | Quality design & thoughtfully crafted code"
 }
 
 
