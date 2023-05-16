@@ -25,6 +25,15 @@ import Phone from "./assets/img/call-calling.svg"
 import Email from "./assets/img/sms.svg"
 
 
+//Key Features icons.
+import Start from "./assets/img/star.svg"
+import Verify from "./assets/img/verify.svg"
+import PenToool from "./assets/img/pen-tool.svg"
+import SendIcon from "./assets/img/send-icon.svg"
+import Clock from "./assets/img/clock.svg"
+import SmsStar from "./assets/img/sms-star.svg"
+
+
 export const brandLogo = [
     {
         logoUrl: Spotify
@@ -262,4 +271,45 @@ export const footerMenus = [
             },
         ]
     },
+]
+
+
+export const keyFeatures = [
+    {
+        id: 1,
+        icon: Start,
+        title: "Finest Quality",
+        desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit."
+    },
+    {
+        id: 2,
+        icon: Verify,
+        title: "Real Solutions",
+        desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit."
+    },
+    {
+        id: 3,
+        icon: PenToool,
+        title: "Great Design",
+        desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit."
+    },
+    {
+        id: 4,
+        icon: SendIcon,
+        title: "Quick Response",
+        desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit."
+    },
+    {
+        id: 5,
+        icon: Clock,
+        title: "Time Saving",
+        desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit."
+    },
+    {
+        id: 6,
+        icon: SmsStar,
+        title: "Best Support",
+        desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit."
+    }
+
 ]

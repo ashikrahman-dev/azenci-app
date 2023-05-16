@@ -1,16 +1,46 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Form, Row } from "react-bootstrap";
 import { footerMenus } from "../../data";
 import { Link } from "react-router-dom";
 import FooterBG from "../../assets/img/footer-bg.svg"
 
 import "./footer.scss"
+import FillButton from "../FillButton/FillButton";
 
 
 const Footer = () => {
     return (
-        <>
+        <>  
+            <div className="">
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className="newsletter-wrap radius-20">
+                                <Row className="align-items-center">
+                                    <Col xl={5}>
+                                        <h2 className="fs-38 lh-54 text-white fw-bold mb-3">
+                                            Newsletter Subscribe
+                                        </h2>
+                                        <p className="fs-18 lh-28 fw-normal text-dark-6">
+                                            Aute irure dolor in reprehenderit in voluptate at esse cillum dolore eu fugiat pariatur.
+                                        </p>
+                                    </Col>
+                                    <Col xl={{ span: 6, offset: 1 }}>
+                                        <Form className="newsletter-form-wrap position-relative">
+                                            <Form.Control className="newsletter-email fs-14 lh-20 fw-medium text-dark-3 radius-16" type="email" placeholder="Enter your email" />
+                                            <span className="newsletter-btn position-absolute">
+                                                <FillButton buttonText="Subscribe" buttonLink="/subscribe" />
+                                            </span>
+                                        </Form>
+                                    </Col>
+                                </Row>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
             <div className="footer-wrap" style={{ background: `url(${FooterBG})` }}>
-                <div className="footer-top pt-80 pb-80">
+                <div className="footer-top pb-80">
                     <Container>
                         <Row>
                             {
