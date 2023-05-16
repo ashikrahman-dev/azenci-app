@@ -24,19 +24,17 @@ const Services = () => {
                         {
                             services.map((service) => {
                                 return (
-                                    <>
-                                        <Col xl={4} key={service.id}>
-                                            <div className="services-item-wrap mb-30">
-                                                <div className="services-item text-center radius-16 bg-white">
-                                                    <div className="pb-30">
-                                                        <img src={service.icon} alt={service.title} />
-                                                    </div>
-                                                    <h4 className="fs-4 lh-30 fw-bold text-dark-2 pb-20">{service.title}</h4>
-                                                    <p className="fs-6 lh-26 fw-normal text-dark-3">{service.desc}</p>
+                                    <Col xl={4} key={service.id}>
+                                        <div className="services-item-wrap mb-30">
+                                            <div className="services-item text-center radius-16 bg-white">
+                                                <div className="pb-30">
+                                                    <img src={service.icon} alt={service.title} />
                                                 </div>
+                                                <h4 className="fs-4 lh-30 fw-bold text-dark-2 pb-20">{service.title}</h4>
+                                                <p className="fs-6 lh-26 fw-normal text-dark-3">{service.desc}</p>
                                             </div>
-                                        </Col>
-                                    </>
+                                        </div>
+                                    </Col>
                                 )
                             })
                         }

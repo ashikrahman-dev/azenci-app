@@ -1,0 +1,30 @@
+.footer-wrap {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .widget-title {
+        padding-bottom: 38px;
+    }
+    .footer-info-link {
+        gap: 12px;
+        transition: all .2s linear;
+
+        &:hover {
+            color: var(--secondary);
+        }
+    }
+    .footer-menu-item {
+        transition: all .2s linear;
+        padding-bottom: 14px;
+
+        &:hover {
+            color: var(--secondary);
+        }
+    }
+
+    .fullscreen-border {
+        height: 20px;
+        width: 100%;
+        background: #ddd;
+    }
+}

@@ -18,6 +18,13 @@ import DigitalMarketingIcon from "./assets/img/digital-marketing-icon.svg"
 //Features images.
 import FeaturesImage from "./assets/img/why-choose-us.svg"
 
+//Footer
+import FLogo from "./assets/img/footer-logo.svg"
+import Location from "./assets/img/location.svg"
+import Phone from "./assets/img/call-calling.svg"
+import Email from "./assets/img/sms.svg"
+
+
 export const brandLogo = [
     {
         logoUrl: Spotify
@@ -117,3 +124,127 @@ export const features = {
     description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     featureImg: FeaturesImage
 }
+
+
+export const footerMenus = [
+    {
+        id: 1,
+        colXL: 3,
+        footerLogo: FLogo,
+        contactInfo: [
+            {
+                id: 11,
+                icon: Location,
+                infoText: "151 Allen Way, Yuba City, CA, USA.",
+            },
+            {
+                id: 12,
+                icon: Phone,
+                infoText: "(800) 123 6789",
+                link: "tel:8001236789"
+            },
+            {
+                id: 13,
+                icon: Email,
+                infoText: "support@azenci.com",
+                link: "mailto:support@azenci.com"
+            },
+        ]
+    },
+    {
+        id: 2,
+        colXL: 4,
+        widgetTitle: "Services",
+        widgetMenu: [
+            {
+                id: 21,
+                menuItem: "Design",
+                menuLocation: "/design"
+            },
+            {
+                id: 22,
+                menuItem: "Development",
+                menuLocation: "/development"
+            },
+            {
+                id: 23,
+                menuItem: "Search Engine Optimization (SEO)",
+                menuLocation: "/seo"
+            },
+            {
+                id: 24,
+                menuItem: "Installation",
+                menuLocation: "/installation"
+            },
+            {
+                id: 25,
+                menuItem: "Digital Marketing",
+                menuLocation: "/digital-marketing"
+            },
+        ]
+    },
+    {
+        id: 3,
+        colXL: 3,
+        widgetTitle: "Company",
+        widgetMenu: [
+            {
+                id: 31,
+                menuItem: "About Company",
+                menuLocation: "/about-company"
+            },
+            {
+                id: 32,
+                menuItem: "Support",
+                menuLocation: "/support"
+            },
+            {
+                id: 33,
+                menuItem: "Privacy Policy",
+                menuLocation: "/privacy-policy"
+            },
+            {
+                id: 34,
+                menuItem: "Product Sourcing",
+                menuLocation: "/product-sourcing"
+            },
+            {
+                id: 35,
+                menuItem: "Terms and Conditions",
+                menuLocation: "/terms-and-conditions"
+            },
+        ]
+    },
+    {
+        id: 4,
+        colXL: 2,
+        widgetTitle: "Quick Links",
+        widgetMenu: [
+            {
+                id: 41,
+                menuItem: "Home",
+                menuLocation: "/"
+            },
+            {
+                id: 42,
+                menuItem: "About us",
+                menuLocation: "/about"
+            },
+            {
+                id: 43,
+                menuItem: "Services",
+                menuLocation: "/services"
+            },
+            {
+                id: 44,
+                menuItem: "Blog",
+                menuLocation: "/blog"
+            },
+            {
+                id: 45,
+                menuItem: "Contact",
+                menuLocation: "/contact"
+            },
+        ]
+    },
+]
