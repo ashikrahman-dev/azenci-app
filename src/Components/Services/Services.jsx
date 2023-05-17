@@ -24,7 +24,7 @@ const Services = () => {
                         {
                             services.map((service) => {
                                 return (
-                                    <Col xl={4} key={service.id}>
+                                    <Col xl={4} md="6" key={service.id}>
                                         <div className="services-item-wrap mb-30">
                                             <div className="services-item text-center radius-16 bg-white">
                                                 <div className="pb-30">

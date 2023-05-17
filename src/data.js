@@ -274,7 +274,7 @@ export const footerMenus = [
 ]
 
 
-export const keyFeatures = [
+export const dataKeyFeatures = [
     {
         id: 1,
         icon: Start,

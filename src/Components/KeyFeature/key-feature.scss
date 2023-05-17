@@ -1,0 +1,12 @@
+.single-key-feature {
+    padding: 40px 50px;
+    // margin-bottom: 30px;
+    h5 {
+        gap: 15px;
+    }
+}
+
+.rowGutter {
+    --bs-gutter-x:30px !important;
+    --bs-gutter-y:30px !important;
+}

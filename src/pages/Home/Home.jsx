@@ -7,6 +7,7 @@ import "./Home.scss"
 import { brandLogo } from "../../data"
 import Services from "../../Components/Services/Services"
 import Feature from "../../Components/Feature/Feature"
+import KeyFeature from "../../Components/KeyFeature/KeyFeature"
 
 
 
@@ -63,8 +64,8 @@ export const Home = () => {
       </div>
 
       <Services />
-
       <Feature />
+      <KeyFeature />
 
     </>
     
