@@ -1,0 +1,100 @@
+.portfolio-row {
+    --bs-gutter-x:30px !important;
+    --bs-gutter-y:30px !important;
+}
+
+.portfolio-item-wrap {
+    margin-bottom: 30px;
+    .portfolio-item {
+        padding: 10px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 60px rgba(24, 20, 54, 0.08);
+        border-radius: 16px;
+        overflow: hidden;
+
+        &:hover {
+            .portfolio-img {
+                &::before {
+                    top: 0%;
+                    opacity: 1;
+                }
+            }
+            .portfolio-content {
+                bottom: 50px;
+                opacity: 1;
+            }
+            .view-demo-btn-wrap {
+                top: calc(50% - 27px);
+                opacity: 1;
+            }
+        }
+        
+
+        .portfolio-img {
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                z-index: 9;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(180deg, rgba(59, 54, 99, 0.05) 0%, rgba(59, 54, 99, 0.6) 100%);
+                border-radius: 14px;
+                top: 100%;
+                transition: all 200ms linear;
+                opacity: 0;
+                
+            }
+        }
+
+        .portfolio-content {
+            bottom: 5px;
+            opacity: 0;
+            left: 50px;
+            z-index: 99;
+            transition: all 200ms linear;
+
+            .portfolio-heading {
+                padding-left: 14px;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 4px;
+                    height: 20px;
+                    left: 0;
+                    background: linear-gradient(135deg, #FF8989 0%, #FFBB89 100%);
+                    border-radius: 10px;
+                    top: calc(50% - 10px);
+                }
+            }
+            
+        }
+
+        .view-demo-btn-wrap {
+            left: 50%;
+            top: calc(50% + 10px);
+            transition: all 150ms linear;
+            transition-delay: 200ms;
+            opacity: 0;
+            z-index: 99;
+            transform: translateX(-50%);
+            .view-demo-btn {
+                gap: 10px;
+                padding: 17px 20px;
+                &:hover {
+                    color: var(--main);
+                }
+            }
+
+        }
+    }
+}

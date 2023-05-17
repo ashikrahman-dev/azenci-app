@@ -34,6 +34,9 @@ import Clock from "./assets/img/clock.svg"
 import SmsStar from "./assets/img/sms-star.svg"
 
 
+
+
+
 export const brandLogo = [
     {
         logoUrl: Spotify
@@ -313,3 +316,4 @@ export const dataKeyFeatures = [
     }
 
 ]
+

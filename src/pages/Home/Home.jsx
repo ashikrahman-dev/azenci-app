@@ -8,17 +8,17 @@ import { brandLogo } from "../../data"
 import Services from "../../Components/Services/Services"
 import Feature from "../../Components/Feature/Feature"
 import KeyFeature from "../../Components/KeyFeature/KeyFeature"
+import Portfolio from "../../Components/Portfilio/Portfolio"
 
 
 
 
-export const Home = () => {
+const Home = () => {
   return (
     <>
-
       <div className="hero-banner">
         <Container className="overflow-hidden">
-          <Row className="pt-120 pb-120 align-items-center my-3">
+          <Row className="hero-banner-inner align-items-center my-3">
             <Col xl={6}>
               <div className="subheading pb-20">
                 Digital Agency
@@ -66,10 +66,12 @@ export const Home = () => {
       <Services />
       <Feature />
       <KeyFeature />
+      <Portfolio />
 
     </>
     
   )
 }
 
+export default Home;
 
