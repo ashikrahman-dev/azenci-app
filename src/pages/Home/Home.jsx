@@ -9,6 +9,7 @@ import Services from "../../Components/Services/Services"
 import Feature from "../../Components/Feature/Feature"
 import KeyFeature from "../../Components/KeyFeature/KeyFeature"
 import Portfolio from "../../Components/Portfilio/Portfolio"
+import Testimonial from "../../Components/Testimonial/Testimonial"
 
 
 
@@ -67,6 +68,7 @@ const Home = () => {
       <Feature />
       <KeyFeature />
       <Portfolio />
+      <Testimonial />
 
     </>
     

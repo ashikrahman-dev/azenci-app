@@ -34,6 +34,10 @@ import Clock from "./assets/img/clock.svg"
 import SmsStar from "./assets/img/sms-star.svg"
 
 
+//Testimonial
+import TestimonialAuthor1 from "./assets/img/testimonial-author-1.png";
+import TestimonialAuthor2 from "./assets/img/testimonial-author-2.png";
+import TestimonialAuthor3 from "./assets/img/testimonial-author-3.png";
 
 
 
@@ -317,3 +321,46 @@ export const dataKeyFeatures = [
 
 ]
 
+
+export const testimonials = [
+    {
+        id: 1,
+        userImg: TestimonialAuthor1,
+        reviewText: "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        name: "Marvin McKinney",
+        ratings: 4.6,
+        bgColor: "blue-gradient"
+    },
+    {
+        id: 2,
+        userImg: TestimonialAuthor2,
+        reviewText: "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        name: "Ronald Richards",
+        ratings: 5,
+        bgColor: "yellow-gradient"
+    },
+    {
+        id: 3,
+        userImg: TestimonialAuthor3,
+        reviewText: "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        name: "Kathryn Murphy",
+        ratings: 3.8,
+        bgColor: "blue-gradient"
+    },
+    {
+        id: 4,
+        userImg: TestimonialAuthor2,
+        reviewText: "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        name: "Ronald Richards",
+        ratings: 5,
+        bgColor: "yellow-gradient"
+    },
+    {
+        id: 5,
+        userImg: TestimonialAuthor3,
+        reviewText: "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        name: "Kathryn Murphy",
+        ratings: 3.8,
+        bgColor: "blue-gradient"
+    }
+]
