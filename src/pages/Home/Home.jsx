@@ -10,6 +10,7 @@ import Feature from "../../Components/Feature/Feature"
 import KeyFeature from "../../Components/KeyFeature/KeyFeature"
 import Portfolio from "../../Components/Portfilio/Portfolio"
 import Testimonial from "../../Components/Testimonial/Testimonial"
+import LatestNews from "../../Components/LatestNews/LatestNews"
 
 
 
@@ -69,6 +70,7 @@ const Home = () => {
       <KeyFeature />
       <Portfolio />
       <Testimonial />
+      <LatestNews />
 
     </>
     

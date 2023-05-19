@@ -41,6 +41,12 @@ import TestimonialAuthor3 from "./assets/img/testimonial-author-3.png";
 
 
 
+//Latest News
+import featuredImage1 from './assets/img/blog-post-1.jpg'
+import featuredImage2 from './assets/img/blog-post-2.jpg'
+import featuredImage3 from './assets/img/blog-post-3.jpg'
+
+
 export const brandLogo = [
     {
         logoUrl: Spotify
@@ -363,4 +369,64 @@ export const testimonials = [
         ratings: 3.8,
         bgColor: "blue-gradient"
     }
+]
+
+
+export const LatestNewsData = [
+    {
+        id: 1,
+        featuredImg: featuredImage1,
+        date: "Feb 15, 2023",
+        author: "Ronald Richards",
+        title: "Website Development Process 101 | A Guide to Pixel-Perfect",
+        content: "Consectetur adipiscing elit, sed do ut eiusmod tempor incididunt..."
+    },
+    {
+        id: 2,
+        featuredImg: featuredImage2,
+        date: "Feb 15, 2023",
+        author: "Ronald Richards",
+        title: "Everything You Need to Know About UI/UX Design",
+        content: "Consectetur adipiscing elit, sed do ut eiusmod tempor incididunt..."
+    },
+    {
+        id: 3,
+        featuredImg: featuredImage3,
+        date: "Feb 15, 2023",
+        author: "Ronald Richards",
+        title: "How to be a WordPress developer in 2023 and beyond?",
+        content: "Consectetur adipiscing elit, sed do ut eiusmod tempor incididunt..."
+    },
+    {
+        id: 4,
+        featuredImg: featuredImage2,
+        date: "Feb 15, 2023",
+        author: "Ronald Richards",
+        title: "Everything You Need to Know About UI/UX Design",
+        content: "Consectetur adipiscing elit, sed do ut eiusmod tempor incididunt..."
+    },
+    {
+        id: 5,
+        featuredImg: featuredImage3,
+        date: "Feb 15, 2023",
+        author: "Ronald Richards",
+        title: "How to be a WordPress developer in 2023 and beyond?",
+        content: "Consectetur adipiscing elit, sed do ut eiusmod tempor incididunt..."
+    },
+    {
+        id: 6,
+        featuredImg: featuredImage1,
+        date: "Feb 15, 2023",
+        author: "Ronald Richards",
+        title: "Website Development Process 101 | A Guide to Pixel-Perfect",
+        content: "Consectetur adipiscing elit, sed do ut eiusmod tempor incididunt..."
+    },
+    {
+        id: 7,
+        featuredImg: featuredImage2,
+        date: "Feb 15, 2023",
+        author: "Ronald Richards",
+        title: "Everything You Need to Know About UI/UX Design",
+        content: "Consectetur adipiscing elit, sed do ut eiusmod tempor incididunt..."
+    },
 ]

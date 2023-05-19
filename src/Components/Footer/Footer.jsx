@@ -100,7 +100,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-bottom">
                     <div className="fullscreen-border"></div>
-                    <div className="footer-bottom-wrap pt-30 pb-30">
+                    <div className="footer-bottom-wrap pt-20 pb-20">
                         <Container>
                             <Row className=" align-items-center">
                                 <Col xl={6}>

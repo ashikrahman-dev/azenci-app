@@ -184,6 +184,11 @@ li {
     letter-spacing: 0.09em;
 }
 
+//Font weight
+.fw-medium {
+    font-weight: 500;
+}
+
 //Border radius
 .radius-8 {
     border-radius: 8px;
@@ -199,8 +204,17 @@ li {
 }
 
 //Padding
+.pt-10 {
+    padding-top: 10px;
+}
+.pb-10 {
+    padding-bottom: 10px;
+}
 .pt-15 {
     padding-top: 15px;
+}
+.pb-15 {
+    padding-bottom: 15px;
 }
 .pt-20 {
     padding-top: 20px;
