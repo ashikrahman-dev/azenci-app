@@ -1,17 +1,23 @@
 .single-latest-news {
 
-    box-shadow: 0px 10px 60px rgba(24, 20, 54, 0.08);
+    margin: 30px 0;
+
+    box-shadow: 0px 10px 20px rgba(24, 20, 54, 0.08);
+
     .date-author-wrap {
         gap: 30px;
     }
+
     .featured-img {
         img {
             width: 100%;
             border-radius: 16px 16px 0 0;
         }
     }
+
     .news-content-wrap {
         padding: 25px 30px;
+
         .news-date,
         .author-name {
             gap: 8px;
@@ -35,13 +41,78 @@
             height: 12px;
             background: linear-gradient(135deg, rgba(255, 137, 137, 30) 0%, rgba(255, 187, 137, 30) 100%);
         }
+
         .swiper-pagination-bullet-active {
             width: 12px;
             height: 12px;
             background: linear-gradient(135deg, #FF8989 0%, #FFBB89 100%);
         }
-        
-        margin: 0 18px;
-        padding: 0 18px;
+
+        margin: 0 58px;
+        padding: 0 58px;
     }
 }
+
+
+.last-news-carousel {
+    margin: 0 23px;
+    padding: 0 23px;
+
+    .swiper-button-prev {
+        width: 50px;
+        height: 50px;
+        &::after {
+            content: "";
+            background: url('data:image/svg+xml,<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity="0.2" cx="25" cy="25" r="25" fill="url(%23paint0_linear_24_12889)"/><path d="M28 32.9201L21.48 26.4001C20.71 25.6301 20.71 24.3701 21.48 23.6001L28 17.0801" stroke="url(%23paint1_linear_24_12889)" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="paint0_linear_24_12889" x1="0" y1="0" x2="53.9569" y2="4.71464" gradientUnits="userSpaceOnUse"><stop stop-color="%238C7DFF"/><stop offset="1" stop-color="%237DA9FF"/></linearGradient><linearGradient id="paint1_linear_24_12889" x1="20.9025" y1="17.0801" x2="28.6083" y2="17.3818" gradientUnits="userSpaceOnUse"><stop stop-color="%238C7DFF"/><stop offset="1" stop-color="%237DA9FF"/></linearGradient></defs></svg>');
+            width: 50px;
+            height: 50px;
+            background-repeat: no-repeat;
+            border-radius: 100px;
+            background-size: cover;
+            transition: all 100ms linear;
+        }
+        &:hover {
+            &::after {
+                background: url('data:image/svg+xml,<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" r="25" fill="url(%23paint0_linear_24_12886)"/><path d="M28 32.9201L21.48 26.4001C20.71 25.6301 20.71 24.3701 21.48 23.6001L28 17.0801" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="paint0_linear_24_12886" x1="0" y1="0" x2="53.9569" y2="4.71464" gradientUnits="userSpaceOnUse"><stop stop-color="%238C7DFF"/><stop offset="1" stop-color="%237DA9FF"/></linearGradient></defs></svg>');
+                
+            }
+        }
+    }
+    .swiper-button-next {
+        width: 50px;
+        height: 50px;
+        &::after {
+            content: "";
+            background: url('data:image/svg+xml,<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity="0.2" cx="25" cy="25" r="25" fill="url(%23paint0_linear_24_12889)"/><path d="M21.91 32.9201L28.43 26.4001C29.2 25.6301 29.2 24.3701 28.43 23.6001L21.91 17.0801" stroke="url(%23paint1_linear_24_12889)" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="paint0_linear_24_12889" x1="0" y1="0" x2="53.9569" y2="4.71464" gradientUnits="userSpaceOnUse"><stop stop-color="%238C7DFF"/><stop offset="1" stop-color="%237DA9FF"/></linearGradient><linearGradient id="paint1_linear_24_12889" x1="21.91" y1="17.0801" x2="29.6159" y2="17.3818" gradientUnits="userSpaceOnUse"><stop stop-color="%238C7DFF"/><stop offset="1" stop-color="%237DA9FF"/></linearGradient></defs></svg>');
+            width: 50px;
+            height: 50px;
+            background-repeat: no-repeat;
+            border-radius: 100px;
+            background-size: cover;
+            transition: all 100ms linear;
+        }
+        &:hover {
+            &::after {
+                background: url('data:image/svg+xml,<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" r="25" fill="url(%23paint0_linear_24_12886)"/><path d="M21.91 32.9201L28.43 26.4001C29.2 25.6301 29.2 24.3701 28.43 23.6001L21.91 17.0801" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="paint0_linear_24_12886" x1="0" y1="0" x2="53.9569" y2="4.71464" gradientUnits="userSpaceOnUse"><stop stop-color="%238C7DFF"/><stop offset="1" stop-color="%237DA9FF"/></linearGradient></defs></svg>');
+                
+            }
+        }
+    }
+
+    .swiper-button-next.swiper-button-disabled, 
+    .swiper-button-prev.swiper-button-disabled {
+        opacity: .7;
+    }
+
+
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: var(--swiper-navigation-sides-offset, 1px);
+    }
+
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: var(--swiper-navigation-sides-offset,1px);
+    }
+
+
+}
+

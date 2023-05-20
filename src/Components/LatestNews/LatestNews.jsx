@@ -22,7 +22,7 @@ const LatestNews = () => {
     return (
         <div className="pt-120 pb-120">
             <Container>
-                <div className="section-heading text-center pb-60">
+                <div className="section-heading text-center pb-20">
                     <CommonSectionHeading
                         subHeading="News Update"
                         subheadingColor="text-main"
@@ -40,7 +40,7 @@ const LatestNews = () => {
                             slidesPerView={3}
                             spaceBetween={30}
                             autoplay={{
-                                delay: 3500,
+                                delay: 993500,
                                 disableOnInteraction: false,
                             }}
                             navigation={
