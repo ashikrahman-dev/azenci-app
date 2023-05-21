@@ -27,9 +27,9 @@ const SubPageHeader = (Title) => {
 </svg>
 									</li>
 									<li>
-										<Link className='text-decoration-none text-dark-2 breadcrumb-active' to={ "/" }>
+										<span className='text-dark-2'>
 											{ Title.pageTitle }
-										</Link>
+										</span>
 									</li>
 								</ul>
 							</div>
