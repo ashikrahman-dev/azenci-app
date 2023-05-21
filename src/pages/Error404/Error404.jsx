@@ -5,11 +5,14 @@ import { Col, Container, Row } from 'react-bootstrap';
 import MinimalButton from '../../Components/MinimalButton/MinimalButton';
 import SubPageHeader from '../../Components/SubPageHeader/SubPageHeader';
 
+
+import ErrorPageShape from '../../assets/img/error-page-shape.svg'
+
 const Error404 = () => {
     return (
-        <div>
+        <div className='position-relative'>
             <SubPageHeader
-                pageName="404 Page"
+                pageTitle="404 Page"
             />
             <Container>
                 <Row>
@@ -35,6 +38,9 @@ const Error404 = () => {
                     </Col>
                 </Row>
             </Container>
+            <div className="page-shape position-absolute start-0">
+                <img src={ ErrorPageShape } alt="Shape" className='img-fluid' />
+            </div>
         </div>
     );
 };

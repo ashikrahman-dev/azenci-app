@@ -2,3 +2,27 @@
     max-width: 730px;
     margin: 0 auto;
 }
+.error-wrap {
+    z-index: 9;
+}
+.page-shape {
+    top: 600px;
+    z-index: 2;
+}
+
+.breadcrumb-wrap {
+    ul {
+        gap: 15px;
+        .breadcrumb-disabled {
+            &:hover {
+                color: inherit;
+            }
+        }
+        .breadcrumb-active {
+            transition: all 150ms linear;
+            &:hover {
+                color: var(--secondary);
+            }
+        }
+    }
+}
